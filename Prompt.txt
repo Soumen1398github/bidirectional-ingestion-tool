@@ -1,0 +1,60 @@
+
+
+Project Planning
+
+Prompt:
+"Create a bidirectional data ingestion tool that transfers data between ClickHouse and Flat File (CSV) using a web-based UI. The backend should be in Java (Spring Boot), and the frontend in React with Vite. Include JWT authentication for ClickHouse and allow column selection."
+
+
+
+ Backend Setup
+
+Prompt:
+"Create a Spring Boot REST API controller to connect to a ClickHouse database using host, port, database, username, and JWT token. Use POST method and return connection status."
+
+Prompt:
+"Create a Spring Boot endpoint that reads a CSV file, maps it to a list of rows, and uploads it into a ClickHouse table."
+
+Prompt:
+"Write a DTO for capturing ClickHouse connection details in a Spring Boot application."
+
+Prompt:
+"Write global CORS configuration in Spring Boot to allow requests from localhost:5173."
+
+---
+
+Frontend Setup
+
+Prompt:
+"Build a simple React form to connect to ClickHouse using host, port, database, username, and JWT token. Submit the form to a backend endpoint using Axios."
+
+
+Features
+
+Prompt:
+"Add functionality in React to fetch available tables from ClickHouse and list their column names as checkboxes."
+
+Prompt:
+"Implement data ingestion progress bar and display the total number of records processed in a React component."
+
+Prompt:
+"Create a feature to preview the first 100 records from either ClickHouse or CSV file before starting full ingestion."
+
+---
+
+ Testing
+
+Prompt:
+"Provide test cases for validating data ingestion from ClickHouse to CSV and vice versa, including schema match and record count verification."
+
+---
+
+Bonus
+
+Prompt:
+"Implement a feature to select multiple ClickHouse tables and join them using specified keys before exporting to a flat file."
+
+---
+
+
+
